@@ -1,8 +1,8 @@
 const ratings = document.querySelectorAll('.stars');
 
-ratings.forEach(element => {
-    const stars = element.textContent;
+ratings.forEach(span => {
+    const stars = span.textContent;
     const length = stars.length;
 
-    element.setAttribute('aria-label', `${length} out of 5 stars`);
+    span.setAttribute('aria-label', `${length} out of 5 stars`);
 });
