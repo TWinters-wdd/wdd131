@@ -1,0 +1,101 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+header {
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: right;
+}
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: #ae1b3f;
+}
+hr {
+    border: 1px solid rgb(237, 199, 154);
+}
+.information {
+    display: grid;
+    grid-template-areas:
+        'date'
+        'age'
+        'genre'
+        'rating'
+        'title'
+        'img'
+        'desc'
+    ;
+    row-gap: 0px;
+    justify-content: center;
+}
+.date, .age, .genre, .rating {
+    display: flex;
+    justify-self: right;
+    margin: 10px;
+}
+.date {
+    grid-area: date;
+}
+.age {
+    grid-area: age;
+}
+.genre {
+    grid-area: genre;
+}
+.rating {
+    grid-area: rating;
+}
+.information h2 {
+    grid-area: title;
+    display: flex;
+    margin-left: 25px;
+    color: #ae1b3f;
+}
+.information img {
+    display: flex;
+    justify-self: center;
+    grid-area: img;
+}
+#desc {
+    grid-area: desc;
+    justify-self: left;
+    max-width: 333px;
+    margin-left: 25px;
+}
+.footer {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .remove {
+        display: none;
+    }
+    .date, .age, .genre, .rating {
+        display: flex;
+        padding-right: 30px;
+        width: 100px;
+    }
+    .date {
+        border-right: 3px solid rgb(237, 199, 154);
+        height: 64vh;
+    }
+    .information {
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 17vh 1fr;
+        grid-template-rows: repeat(4, 30.72px) 1fr 60px;
+        grid-template-areas:
+            'date title'
+            'age title'
+            'genre img'
+            'rating img'
+            'rating img'
+            'rating desc'
+        ;
+    }
+}
