@@ -71,15 +71,4 @@ p.rating{
     .main-nav li {
         display: inline;
     }
-    /* .movie {
-        display: grid;
-        grid-template-areas:
-            'picture header'
-            'picture date'
-            'picture age'
-            'picture genre'
-            'picture rating'
-            'desc desc'
-        ;
-    } */
 }

@@ -46,7 +46,7 @@ const moviesList = document.getElementById('movie-list');
 movies.forEach((movie, index) => {
   const article = document.createElement('article');
   article.classList.add('movie');
-  article.id = `movie-${index}`;
+  article.id = `movie-${index + 1}`;
 
   article.innerHTML = `
     <h2>${movie.title}</h2>
