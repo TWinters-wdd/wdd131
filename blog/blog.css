@@ -29,7 +29,6 @@ hr {
         'img'
         'desc'
     ;
-    row-gap: 0px;
     justify-content: center;
 }
 .date, .age, .genre, .rating {
@@ -77,12 +76,12 @@ hr {
     }
     .date, .age, .genre, .rating {
         display: flex;
-        padding-right: 30px;
+        padding-right: 20px;
         width: 100px;
     }
     .date {
         border-right: 3px solid rgb(237, 199, 154);
-        height: 64vh;
+        height: 36vh;
     }
     .information {
         display: grid;
@@ -97,5 +96,26 @@ hr {
             'rating img'
             'rating desc'
         ;
+    }
+    .information img {
+        padding-top: 20px;
+    }
+    #desc {
+        margin-bottom: 30px;
+    }
+    #book-1, #book-2, #book-3 {
+        padding: 30px;
+        justify-content: center;
+    }
+    #book-3 {
+        padding-top: 63px;
+    }
+    #book-3 img {
+        padding-top: 50px;
+    }
+    .footer {
+        margin: 100px 0px;
+        width: 100vh;
+        justify-self: center;
     }
 }
