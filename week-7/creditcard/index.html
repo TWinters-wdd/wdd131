@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talmage Winters">
+    <meta name="description" content="Credit Card Form">
+    <link rel="stylesheet" href="creditcard.css">
+    <title>Credit Card Form</title>
+</head>
+<body>
+    <form id="cardForm">
+        <section class="errors"></section>
+        <div id="card-front">
+            <p id="total">TOTAL: $199</p>
+            <p id="cardIcon">💳</p>
+            <div id="cardNumber">
+                <label for="creditCardNumber">CARD NUMBER</label>
+                <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="1234 5678 9101 1020" aria-labelledby="creditCardNumber" required>
+            </div>
+            <div id="cardHolder">
+                <label for="creditCardHolder">CARD HOLDER</label>
+                <input type="text" id="creditCardHolder" name="creditCardHolder" placeholder="John Doe" aria-labelledby="creditCardHolder" required>
+            </div>
+            <div id="cardExpiration">
+                <label for="expirationDate">EXPIRATION</label>
+                <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate" required>
+                <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate" required>
+            </div>
+        </div>
+        <div id="card-back">
+            <div id="blackLine"></div>
+            <div id="security">
+                <label for="securityCode">CVC/CVV</label>
+                <input type="text" id="securityCode" name="securityCode" placeholder="xxx" aria-labelledby="securityCode" required>
+            </div>
+        </div>
+        <button id="submitButton" type="submit">Submit</button>
+    </form>
+    <script src="creditcard.js"></script>
+</body>
+</html>
