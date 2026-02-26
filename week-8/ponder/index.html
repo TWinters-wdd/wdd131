@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talmage Winters">
+    <meta name="description" content="Week 8 Ponder">
+    <title>Week 8 Ponder</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="objects.css">
+</head>
+<body>
+    <main>
+        <h1 id="courseName"></h1>
+        <h2 id="courseCode"></h2>
+        <label for="sectionNumber">Section Number</label>
+        <input id="sectionNumber" />
+        <button id="enrollStudent">Enroll Student</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Section#</th>
+                    <th>Room#</th>
+                    <th>#Enrolled</th>
+                    <th>Days</th>
+                    <th>Instructor</th>
+                </tr>
+            </thead>
+            <tbody id="sections"></tbody>
+        </table>
+    </main>
+    <h3>Add New Section: </h3>
+    <form id="newSection">
+        <label for="roomNumber">Room Number: </label>
+        <input id="roomNumber" />
+        <label for="studentsEnrolled">Number Enrolled: </label>
+        <input id="studentsEnrolled" />
+        <label for="sectionDays">Days: </label>
+        <input id="sectionDays" />
+        <label for="sectionInstructor">Instructor: </label>
+        <input id="sectionInstructor" />
+        <button id="addSection">Add Section</button>
+    </form>
+</body>
+</html>
