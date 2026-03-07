@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+#recipeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+}
+hr {
+    border-top: 3px solid lightgray;
+    width: 100%;
+    margin: 15px 0px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+header img {
+    width: 160px;
+    height: 160px;
+}
+header h1 {
+    font-family: 'Amatic SC';
+    font-size: 70px;
+}
+#searchBarContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+#searchBar {
+    width: 100%;
+    border: none;
+    margin: 0px 25px 10px 25px;
+    font-size: large;
+}
+#magnifyingGlass {
+    width: 3em;
+    height: 50px;
+    margin: 0px 10px 10px;
+    border-left: 3px solid gray;
+    padding-left: 10px;
+}
+#recipeInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    border-radius: 15px;
+    align-items: flex-start;
+}
+#recipeDescription p {
+    display: none;
+}
+#recipeInfo img {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    max-width: 90%;
+    align-self: center;
+    padding: 20px 0px 3px;
+}
+#recipeInfo h2 {
+    margin-left: 20px;
+    font-family: 'Amatic SC';
+    color: #70beea;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+#dessertBtn {
+    margin-left: 20px;
+    height: 30px;
+    font-size: 20px;
+}
+.rating {
+    margin-left: 13px;
+}
+.social {
+    margin: 15px 0px;
+}
+.social img {
+    width: 50px;
+    height: 50px;
+}
+footer a {
+    font-size: 30px;
+}
+
+@media (min-width: 768px) {
+    #recipeInfo {
+        display: flex;
+        flex-direction: row;
+    }
+    #recipeInfo img {
+        width: 45%;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    #dessertBtn {
+        max-height: 30px;
+        margin-top: 20px;
+    }
+    #recipeDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 50%;
+    }
+    #recipeDescription p{
+        display: flex;
+        text-align: left;
+        margin-left: 20px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 20px 10px;
+    }
+}
