@@ -1,0 +1,34 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2em auto;
+    max-width: 75%;
+    justify-self: center;
+    margin-top: 20px;
+}
+#search-container {
+    grid-column: 1 / 3;
+    justify-self: center;
+    max-height: 10%;
+}
+#hike-container {
+    grid-column: 1 / 2;
+    padding-right: 50px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    background-color: #f57600;
+    color: black;
+    border: 4px solid #054fb9;
+    border-radius: 10px;
+}
+#saved-hikes {
+    grid-column: 2 / 3;
+    text-align: center;
+    background-color: #054fb9;
+    color: white;
+    padding: 0px 20px;
+    margin-left: 10px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
