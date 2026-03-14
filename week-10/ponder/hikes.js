@@ -86,12 +86,12 @@ function search() {
     })
 
     function compareHikes(a,b) {
-    if (a.difficulty < b.difficulty) {
-        return -1;
-    } else if (a.difficulty > b.difficulty) {
-        return 1;
-    }
-    return 0;
+        if (a.difficulty < b.difficulty) {
+            return -1;
+        } else if (a.difficulty > b.difficulty) {
+            return 1;
+        }
+        return 0;
     }
 
     let sortedHikes = filteredHikes.sort(compareHikes);
@@ -153,7 +153,7 @@ function difficultyTemplate(rating) {
     }
     html += `</span>`
     return html
-  }
+}
 
 function hikesTemplate(hike) {
     return `<div class="hike-card">
