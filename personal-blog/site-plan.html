@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="Author" content="Talmage Winters">
+        <meta name="Description" content="Site Plan for WDD131 Final Project BYU-Idaho">
+		<title>Personal Blog Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Personal Blog Site Plan</h1>
+			<h2>Talmage Winters</h2>
+			<h2>WDD 131-1</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			<!-- ------------------------Steps 2-3------------------------------ -->
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>My purpose is to provide a website where each user can post about their personal life. The purpose of this website is to share content.</p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>The audience for this site is anyone who is interested in sharing about their life events. It is more targeted toward adults though because the format is going to be sharing a photo with several paragraphs.</p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>Dynamic elements provided by JavaScript include adding a new post to the blog. The JavaScript will create a new object that contains all the information added in a "Create New Post" section. Each new post will be added to an array of objects. There will be a child page that will give information about the company and provide a place to send an email to the company. The content of each post needs to persist across page reloads for each user.</p>
+			<!-- change this -->
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="images/Logo.png" alt="Logo image" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<!-- ------------------------Steps 4-8------------------------------ -->
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/0077b6-00b4d8-90e0ef-caf0f8"
+				target="_blank"
+				>https://coolors.co/0077b6-00b4d8-90e0ef-caf0f8</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#0077B6]</td>
+						<td class="secondary">[#00B4D8]</td>
+						<td class="accent1">[#90E0EF]</td>
+						<td class="accent2">[#CAF0F8]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- ------------------------Step 9------------------------------ -->
+
+			<h3>Typography</h3>
+			<!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+			<h4>
+				Heading Font: Roboto Mono
+				<!-- change this -->
+			</h4>
+			<h4>
+				Paragraph Font: Open Sans
+				<!-- change this -->
+			</h4>
+			<h3>Normal paragraph example</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+			<h3>Colored paragraph example</h3>
+			<p class="colored">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat.
+			</p>
+
+			<!-- ------------------------Step 10------------------------------ -->
+
+			<h3>Navigation</h3>
+			<!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+			<nav>
+				<a href="#">Blog Posts</a>
+				<a href="#">Contact Us</a>
+			</nav>
+			<hr />
+
+			<h2>Content</h2>
+			<h3>Home page</h3>
+			<img src="images/Logo.png" alt="Logo with the words Blog Quik on it">
+			<img src="images/image_placeholder.png" alt="Image Placeholder">
+			<p>Looks like you don't have any blog posts yet. Click the image to create your first one.</p>
+			<!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+			<a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+			<a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+			<a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+			<form>
+				<label for="blogImage">Select image: </label>
+				<input type="file" id="blogImage" name="blogImage" accept="image/*">
+				<label for="blogHeader">Blog Header</label>
+				<input type="text" id="blogHeader" name="blogHeader">
+				<label for="blogBody">Blog Content</label>
+				<input type="text" id="blogBody" name="blogBody">
+			</form>
+
+			<h3>Contact Us</h3>
+			<h4>Contact Form</h4>
+			<form>
+				<label for="emailAddress">Enter Your Email: </label>
+				<input type="email" id="emailAddress" name="emailAddress">
+				<label for="contactSubject">Enter the Subject for Contact: </label>
+				<input type="text" id="contactSubject" name="contactSubject">
+				<label for="contactMessage">Enter your message: </label>
+				<input type="text" id="contactMessage" name="contactMessage">
+				<button>Submit</button>
+			</form>
+			<h2>Wireframes</h2>
+
+			<h3>Your Posts</h3>
+			<p>
+				The Home Page will originally start out with a blank page with an image placeholder. The text next to the image placeholder is going to say, "Looks like you don't have any blog posts yet. Click here to create your first post." When the user clicks on the box, A modal is going to pop up with a form the user can fill out. The form is going to have a place where the user can upload an image, a place for the user to enter a title for the post, and a place for the user to enter the content of the blog post. The background for each blog post is going to be a light blue with a darker blue for the text. In addition, the website will be dynamic for mobile devices. The Posts will be formatted with just the image and the heading underneath it for mobile devices. If a user clicks on the post, the whole article will show up on their device.
+			</p>
+			<img class="wireframes" src="images/Blog-Posts-Wireframe.png" alt="A Wireframe for a Blog Posting Website">
+
+			<h3>Contact Us</h3>
+			<p>
+				The Contact Us page will have a form where the user can enter their email, a message, and the subject of their message.
+			</p>
+			<img class="wireframes" src="images/Contact-Us-Wireframe.png" alt="A Wireframe for a 'Contact Us' Page">
+		</main>
+	</body>
+</html>
