@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talmage Winters">
+    <meta name="description" content="Blog Website for WDD131 Final at BYU-Idaho">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Blog Quik</title>
+</head>
+<body>
+    <header class="nav-container">
+        <img src="images/Logo.png" alt="Blog Quik Logo" class="site-logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Your Posts</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <form id="contact-form">
+            <label for="email" name="email">Email Address: </label>
+            <input id="email" required>
+            <label for="contactSubject" name="contactSubject">Subject: </label>
+            <input id="contactSubject" required>
+            <label for="contactMessage" name="contactMessage">Message: </label>
+            <textarea id="contactMessage" required></textarea>
+            <button id="submitButton" type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer class="footer-container">
+        <img class="media-icons" src="images/youtube_icon.svg" alt="YouTube Icon">
+        <img class="media-icons" src="images/pinterest_icon.svg" alt="Pintrest Icon">
+        <img class="media-icons" src="images/instagram_icon.svg" alt="Instagram Icon">
+    </footer>
+</body>

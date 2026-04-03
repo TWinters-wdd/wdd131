@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talmage Winters">
+    <meta name="description" content="Blog Website for WDD131 Final at BYU-Idaho">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Blog Quik</title>
+</head>
+<body>
+    <header class="nav-container">
+        <img src="images/Logo.png" alt="Blog Quik Logo" class="site-logo" width="200" height="200">
+        <ul class="nav-links">
+            <li><a href="index.html">Your Posts</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <div id="add-post">
+        <img id="image-placeholder" src="images/image_placeholder.png" alt="Image Placeholder" width="100" height="100">
+        <h1>Add Post</h1>
+    </div>
+    <div id="addModal" class="modal">
+        <div class="addContent">
+            <button id="addPostCloseBtn">&times;</button>
+            <form id="blogForm">
+                <label for="newImage">Upload Image: </label>
+                <input type="file" id="newImage" name="newImage">
+                <br>
+                <label for="newHeader">Blog Header: </label>
+                <br>
+                <input type="text" id="newHeader" name="newHeader">
+                <br>
+                <label for="newContent">Blog Paragraphs: </label>
+                <br>
+                <textarea id="newContent" name="newContent" rows="10" cols="50"></textarea>
+                <br>
+                <button type="submit" id="addPostBtn">Add Post</button>
+            </form>
+        </div>
+    </div>
+    <main id="postsContainer"></main>
+    <button id="clearPostsBtn">Delete All Posts</button>
+    <footer class="footer-container">
+        <img class="media-icons" src="images/youtube_icon.svg" alt="YouTube Icon" width="50" height="50" loading="lazy">
+        <img class="media-icons" src="images/pinterest_icon.svg" alt="Pintrest Icon" width="50" height="50" loading="lazy">
+        <img class="media-icons" src="images/instagram_icon.svg" alt="Instagram Icon" width="50" height="50" loading="lazy">
+    </footer>
+</body>
+</html>
